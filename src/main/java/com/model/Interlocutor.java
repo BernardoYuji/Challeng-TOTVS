@@ -3,14 +3,16 @@ package com.model;
 public class Interlocutor {
     private int idInterlocutor;
     private String nome;
+    private String cargo;
     private String email;
     private Cliente cliente;
 
     public Interlocutor() {}
 
-    public Interlocutor(int idInterlocutor, String nome, String email, Cliente cliente) {
+    public Interlocutor(int idInterlocutor, String nome, String cargo, String email, Cliente cliente) {
         this.idInterlocutor = idInterlocutor;
         this.nome = nome;
+        this.cargo = cargo;
         this.email = email;
         this.cliente = cliente;
     }
@@ -30,6 +32,15 @@ public class Interlocutor {
 
     public Interlocutor setNome(String nome) {
         this.nome = nome;
+        return this;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public Interlocutor setCargo(String cargo) {
+        this.cargo = cargo;
         return this;
     }
 
