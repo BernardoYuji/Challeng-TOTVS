@@ -5,7 +5,7 @@ public class Interlocutor {
     private String nome;
     private String cargo;
     private String email;
-    private Cliente cliente;
+    private Cliente cliente; // Guarda a referência ao Cliente (trazendo implicitamente as FKs ID e Razão Social)
 
     public Interlocutor() {}
 
@@ -17,48 +17,18 @@ public class Interlocutor {
         this.cliente = cliente;
     }
 
-    public int getIdInterlocutor() {
-        return idInterlocutor;
-    }
+    public int getIdInterlocutor() { return idInterlocutor; }
+    public Interlocutor setIdInterlocutor(int idInterlocutor) { this.idInterlocutor = idInterlocutor; return this; }
 
-    public Interlocutor setIdInterlocutor(int idInterlocutor) {
-        this.idInterlocutor = idInterlocutor;
-        return this;
-    }
+    public String getNome() { return nome; }
+    public Interlocutor setNome(String nome) { this.nome = nome; return this; }
 
-    public String getNome() {
-        return nome;
-    }
+    public String getCargo() { return cargo; }
+    public Interlocutor setCargo(String cargo) { this.cargo = cargo; return this; }
 
-    public Interlocutor setNome(String nome) {
-        this.nome = nome;
-        return this;
-    }
+    public String getEmail() { return email; }
+    public Interlocutor setEmail(String email) { this.email = email; return this; }
 
-    public String getCargo() {
-        return cargo;
-    }
-
-    public Interlocutor setCargo(String cargo) {
-        this.cargo = cargo;
-        return this;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public Interlocutor setEmail(String email) {
-        this.email = email;
-        return this;
-    }
-
-    public Cliente getCliente() {
-        return cliente;
-    }
-
-    public Interlocutor setCliente(Cliente cliente) {
-        this.cliente = cliente;
-        return this;
-    }
+    public Cliente getCliente() { return cliente; }
+    public Interlocutor setCliente(Cliente cliente) { this.cliente = cliente; return this; }
 }
