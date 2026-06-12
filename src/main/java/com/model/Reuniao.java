@@ -6,7 +6,7 @@ public class Reuniao {
     private LocalDate data;
     private String transcricao;
     private String sentimento;
-    private Interlocutor interlocutor; // FK para Interlocutor
+    private Interlocutor interlocutor;
 
     public Reuniao() {}
 

@@ -3,7 +3,7 @@ import com.model.*;
 
 public class AnalizadorService {
 
-    // Funcionalidade Real 1: Motor Analítico que gera a inteligência baseada no texto
+    // Funcionalidade Real 1: Motor que gera inteligência dependendo do texto
     public InsightIa extrairDadosDaTranscricao(Reuniao reuniao, Produto produto) {
         String texto = reuniao.getTranscricao().toLowerCase();
         InsightIa insight = new InsightIa().setReuniao(reuniao);
@@ -18,7 +18,7 @@ public class AnalizadorService {
                     .setCategoria("Sinal de Upsell / Compra")
                     .setDetalhe("Oportunidade comercial detectada: Cliente tem interesse em adquirir ou expandir soluções TOTVS.")
                     .setProduto(produto)
-                    .setBudget(55000.00); // Identifica o budget financeiro estimado para a solução
+                    .setBudget(55000.00);
         } else {
             insight.setIdInsight(303)
                     .setCategoria("Neutro")
@@ -27,7 +27,7 @@ public class AnalizadorService {
         return insight;
     }
 
-    // Funcionalidade Real 2: Classificador de Sentimento Automatizado
+    // Funcionalidade Real 2: Classificador de Sentimento
     public String identificarSentimento(String transcricao) {
         String texto = transcricao.toLowerCase();
         if (texto.contains("excelente") || texto.contains("ótimo") || texto.contains("perfeito") || texto.contains("ajudou")) {

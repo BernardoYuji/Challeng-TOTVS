@@ -5,7 +5,7 @@ public class Interlocutor {
     private String nome;
     private String cargo;
     private String email;
-    private Cliente cliente; // Guarda a referência ao Cliente (trazendo implicitamente as FKs ID e Razão Social)
+    private Cliente cliente;
 
     public Interlocutor() {}
 

@@ -2,11 +2,11 @@ package com.model;
 
 public class InsightIa {
     private int idInsight;
-    private String categoria; // TP_INA_CATEGORIA
-    private String detalhe;   // DS_INA_DETALHE
-    private double budget;    // VL_INA_BUDGET
-    private Reuniao reuniao;  // FK para Reuniao
-    private Produto produto;  // FK para Produto (pode ser nulo no banco)
+    private String categoria;
+    private String detalhe;
+    private double budget;
+    private Reuniao reuniao;
+    private Produto produto;
 
     public InsightIa() {}
 
